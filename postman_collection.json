@@ -1,0 +1,140 @@
+{
+    "collection": {
+        "info": {
+            "_postman_id": "d7a66b29-456b-427f-ab94-2e124671861c",
+            "name": "URL_Shortener",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+            "updatedAt": "2023-05-05T17:54:29.000Z",
+            "uid": "13138841-d7a66b29-456b-427f-ab94-2e124671861c"
+        },
+        "item": [
+            {
+                "name": "/api/v1/get-short/",
+                "id": "e1212267-1916-4ec4-ac3a-8f773ed5dff6",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true,
+                    "disabledSystemHeaders": {}
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [
+                        {
+                            "key": "Authorization",
+                            "value": "Token 55ee13a96b3a987bdd03bc35e0e9bd3b252d877b",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{\r\n    \"url\": \"https://www.google.com\"\r\n}"
+                    },
+                    "url": {
+                        "raw": "http://localhost:8001/api/v1/get-short/",
+                        "protocol": "http",
+                        "host": [
+                            "localhost"
+                        ],
+                        "port": "8001",
+                        "path": [
+                            "api",
+                            "v1",
+                            "get-short",
+                            ""
+                        ]
+                    }
+                },
+                "response": [],
+                "uid": "13138841-e1212267-1916-4ec4-ac3a-8f773ed5dff6"
+            },
+            {
+                "name": "/api/v1/get-urls/",
+                "id": "7080dc8f-972b-455a-860d-207b7e575538",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "GET",
+                    "header": [
+                        {
+                            "key": "Authorization",
+                            "value": "Token 55ee13a96b3a987bdd03bc35e0e9bd3b252d877b",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "raw",
+                        "raw": ""
+                    },
+                    "url": {
+                        "raw": "http://localhost:8001/api/v1/get-urls/",
+                        "protocol": "http",
+                        "host": [
+                            "localhost"
+                        ],
+                        "port": "8001",
+                        "path": [
+                            "api",
+                            "v1",
+                            "get-urls",
+                            ""
+                        ]
+                    }
+                },
+                "response": [],
+                "uid": "13138841-7080dc8f-972b-455a-860d-207b7e575538"
+            },
+            {
+                "name": "/api/v1/get-full/",
+                "id": "39eb575c-e415-4cf0-a91a-e670972374b4",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [
+                        {
+                            "key": "Authorization",
+                            "value": "Token 55ee13a96b3a987bdd03bc35e0e9bd3b252d877b",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{\r\n    \"url\": \"http://foobar.com/39b39250d1350fd6b8df06821f81da3c\"\r\n}"
+                    },
+                    "url": {
+                        "raw": "http://localhost:8001/api/v1/get-full/",
+                        "protocol": "http",
+                        "host": [
+                            "localhost"
+                        ],
+                        "port": "8001",
+                        "path": [
+                            "api",
+                            "v1",
+                            "get-full",
+                            ""
+                        ]
+                    }
+                },
+                "response": [],
+                "uid": "13138841-39eb575c-e415-4cf0-a91a-e670972374b4"
+            }
+        ]
+    }
+}
